@@ -44,8 +44,6 @@ Switch to release branch:
 Merge your feature branch into release branch
 >`git merge <feature branch name>`
 
-(Merge conflict might occur at this stage)
-
 ###5. Push change to the remote repository
 >`git push origin release`
 
