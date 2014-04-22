@@ -2,8 +2,6 @@ MOOCProject
 ===========
 
 ##Branches
-There are two branches;
-
 - master : current version
 - release : next version
 
@@ -37,6 +35,8 @@ To stage a modified file:
 To commit changes:
 >`git commit`
 
+This opens up the default editor that lets you add commit message.
+
 ###4. Merge changes into release branch
 Switch to release branch:
 >`git checkout release`
@@ -44,8 +44,14 @@ Switch to release branch:
 Merge your feature branch into release branch
 >`git merge <feature branch name>`
 
-###5. Push change to the remote repository
+###5. Pull changes from the remote repository
+Someone might have made changes since the last pull. To fetch changes in the remote branch and merge them into your local release branch:
+>`git pull origin/release`
+
+(Merge conflict might occur at this stage)
+
+###6. Push change to the remote repository
 >`git push origin release`
 
-###6. (Optional) Delete your feature branch
+###7. (Optional) Delete your feature branch
 >`git branch -d <feature branch name>`
