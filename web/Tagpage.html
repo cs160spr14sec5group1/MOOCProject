@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.sjsu-cs.org/cs160/2014spring/sec5group1/register.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author"><!--<link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">-->
+
+    <title>Register</title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://www.sjsu-cs.org/cs160/2014spring/sec5group1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+    <link href="http://www.sjsu-cs.org/cs160/2014spring/sec5group1/css/starter-template.css" rel="stylesheet">
+	<!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<style type="text/css"></style></head>
+
+<body cz-shortcut-listen="true" class=" hasGoogleVoiceExt"><div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+    <div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;">
+        <object data="http://cdncache-a.akamaihd.net/items/e6a00/storage.swf?r=1" height="1" id="_GPL_e6a00_swf" type="application/x-shockwave-flash" width="1">
+            <param name="wmode" value="transparent">
+            <param name="allowscriptaccess" value="always">
+            <param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl">
+        </object>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://www.sjsu-cs.org/cs160/2014spring/sec5group1/index.php">UC DANDYS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+                <li><a href="http://www.sjsu-cs.org/cs160/2014spring/sec5group1/index.php">Home</a></li>
+				<li><a href="http://www.sjsu-cs.org/cs160/2014spring/sec5group1/about.php">About</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="form" method="post">
+    		<div class="form-group">
+      			<input type="text" placeholder="Email" class="form-control" name="email">
+    		</div>
+    		<div class="form-group">
+      			<input type="password" placeholder="Password" class="form-control" name="password">
+    		</div>
+    		<button type="submit" class="btn btn-success">Sign in</button>
+    		<a type="button" class="btn btn-danger" href="./Register_files/Register.html">Register</a>
+  		</form></div>
+      </div>
+    </div>
+    <div style="margin-top:100px">
+        <div class="container">
+            <div class="panel panel-default" style="margin:0 auto;width:45%">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Add/Delete Tags</h2>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <span class="label label-primary">Machine Learning</span>
+                          <span class="label label-primary">Artificial Intelligence</span>
+                          <span class="label label-primary">Computer Science</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                          <input class="form-control" name="search" placeholder="Separate tags by comma" type="input">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-offset-4">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                            <button type="button" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="./Register_files/jquery.min.js"></script>
+	<script src="./Register_files/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		function validateForm()
+		{
+			//uname
+			regex = /^[a-zA-Z0-9]+$/
+			uname = document.getElementById("uname").value
+			if (!regex.test(uname))
+			{
+	        	alert("Username must be alphanumeric")
+	        	document.getElementById("uname").style.borderColor = "#E34234"
+				return false
+			}
+
+			//password
+			pass1 = document.getElementById("password").value
+	   		pass2 = document.getElementById("confpassword").value
+	    	if (pass1 != pass2) 
+			{
+	        	alert("Passwords do not match")
+	        	document.getElementById("password").style.borderColor = "#E34234"
+	        	document.getElementById("confpassword").style.borderColor = "#E34234"
+	        	return false
+	    	}
+
+			//email
+			email = document.forms["register"]["email"].value
+			atpos = email.indexOf("@")
+			dotpos = email.lastIndexOf(".")
+			if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length)
+			{
+				alert("Not a valid e-mail address")
+	        	document.getElementById("email").style.borderColor = "#E34234"
+				return false
+			}
+		}
+	</script>
+
+
+</body></html>
